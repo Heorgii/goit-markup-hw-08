@@ -1,0 +1,100 @@
+/*  ⁡⁢⁢⁣𝕋𝕖𝕒𝕞⁡  */
+
+.team{
+    background: #F5F4FA;
+}
+
+.teachers{
+    display: flex; 
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.teacher-item{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.item-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+.teacher-discr{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.teacher-name-1, .teacher-name-2, .teacher-name-3, .teacher-name-4{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18 ;
+    text-align: center;
+    letter-spacing: 0.03em; 
+    color: #212121;
+
+    margin-bottom: 10px;
+}
+
+.teacher-work-1, .teacher-work-2, .teacher-work-3, .teacher-work-4{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 16px; 
+}
+
+/* ⁡⁢⁢⁣𝗦𝗼𝗰𝗶𝗮𝗹⁡ icons */
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-item:not(:last-child){
+    margin-right: 10px;
+}
+
+.social-icon{
+    fill: #AFB1B8;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 250ms ease;
+}
+
+.social-link:hover{
+    background-color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:focus{
+    background-color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+    fill: #FFFFFF;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

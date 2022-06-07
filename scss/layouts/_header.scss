@@ -1,0 +1,51 @@
+/* ⁡⁣⁢⁣ℍ𝕖𝕒𝕕𝕖𝕣⁡ */
+header{
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header-container{
+    display: flex;
+    align-items: center; 
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+/* ⁡⁣⁢⁣𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
+
+.header__group{
+    margin-left: auto;
+}
+
+.header__email, .header__tel{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: 250ms ease;
+
+}
+
+.header__email:hover, .header__tel:hover{
+    color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__email:focus, .header__tel:focus{
+    color: #2196F3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__email{
+    margin-right: 50px;
+}
+
+.header__icon{
+    margin-right: 10px;
+    fill: currentColor;
+}

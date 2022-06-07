@@ -1,0 +1,60 @@
+body{
+    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+/* Заголовки секцій */
+
+.section__titles{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    margin-bottom: 50px;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+// Portfolio
+
+html{
+    transition: trasform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 1;
+    animation: from-bottom-to-top 2s;
+}
+
+body{
+    font-family:  'Roboto', sans-serif;
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}

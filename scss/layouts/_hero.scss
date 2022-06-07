@@ -1,0 +1,66 @@
+/* ⁡⁢⁣⁣𝗛𝗲𝗿𝗼⁡ */
+
+.hero{
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__bg{
+    background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bgcpgoto.jpg);
+}
+
+.hero__title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    width: 696px;
+    margin-bottom: 30px;
+}
+
+.button{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    cursor: pointer;
+ 
+    color:#FFFFFF ;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    transition: 250ms ease;
+}
+
+.button:focus{
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button:hover{
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.button-text{
+    padding: 9.75px 31px;
+}
