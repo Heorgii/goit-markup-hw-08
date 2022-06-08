@@ -1,21 +1,26 @@
 // Index
 
 .container{
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 
     margin-left: auto;
     margin-right: auto;
+
+    // Mobile
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    // Table
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    // Desktop
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
-
-// Portfolio
-
-// .container{
-//     width: 1200px;
-//     padding-left: 15px;
-//     padding-right: 15px;
-
-//     margin-left: auto;
-//     margin-right: auto;
-// }
