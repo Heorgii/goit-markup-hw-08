@@ -799,6 +799,18 @@ header {
   display: flex;
 }
 
+@media screen and (min-width: 480px) {
+  .discription {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .discription__list {
   margin-right: 30px;
 }
@@ -813,6 +825,12 @@ header {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (min-width: 480px) {
+  .description__item {
+    text-align: center;
+  }
 }
 
 .description__text {
@@ -845,6 +863,12 @@ header {
 /* ⁡⁣⁢⁢𝕀𝕞𝕒𝕘𝕖⁡ */
 .img__section {
   padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .img__section {
+    display: none;
+  }
 }
 
 .image__list {
@@ -1020,6 +1044,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    display: block;
+    width: 210px;
+    height: 92px;
+  }
 }
 
 .logo__item:not(:last-child) {

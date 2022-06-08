@@ -5,6 +5,15 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    @include mq(mobile){
+        display: block;
+        
+
+        width: 210px;
+        height: 92px;
+
+    }
 }
 
 .logo__item:not(:last-child){

@@ -2,6 +2,12 @@
 
 .discription{
     display: flex;
+
+    @include mq(mobile){
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .discription__list{
@@ -19,6 +25,10 @@
     
     color: #212121;
     margin-bottom: 10px;
+
+    @include mq(mobile){
+        text-align: center;      
+    }
 }
 
 .description__text{
