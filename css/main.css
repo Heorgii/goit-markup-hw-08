@@ -47,8 +47,22 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 body {
@@ -793,71 +807,119 @@ header {
 }
 
 /* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
-.discription {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 480px) {
-  .discription {
-    display: block;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
-.discription__list {
-  margin-right: 30px;
-}
-
-.description__item {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 480px) {
-  .description__item {
-    text-align: center;
+@media screen and (max-width: 479px) {
+  .features {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
-.description__text {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-/* ⁡⁢⁣⁢𝗗𝗶𝘀𝗰𝗿⁡ icons */
-.discription__icon {
-  height: 120px;
+.features-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.features-list {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  grid-gap: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .features-list__item {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__item {
+    width: 270px;
+  }
+}
+
+.features-list__icon-fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: 30px;
   background: #F5F4FA;
-  border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .features-list__icon-fon {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__icon-fon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-list__icon-fon {
+    width: 270px;
+  }
+}
+
+.features-list__icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features-list__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list__title {
+    text-align: left;
+  }
+}
+
+.features-list__text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* ⁡⁣⁢⁢𝕀𝕞𝕒𝕘𝕖⁡ */
@@ -1033,6 +1095,42 @@ header {
 }
 
 /* ⁡⁣⁣⁢Постійні⁡ клієнти Logo */
+.clients-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.logo__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1051,6 +1149,12 @@ header {
     display: block;
     width: 210px;
     height: 92px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 226px;
   }
 }
 

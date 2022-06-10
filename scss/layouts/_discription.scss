@@ -1,56 +1,86 @@
 /* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
 
-.discription{
-    display: flex;
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
-    @include mq(mobile){
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
+  @media screen and (max-width: 479px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+  
+.features-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+  
+.features-list {
+  justify-content: center;
+  grid-gap: 30px;
 }
 
-.discription__list{
-    margin-right: 30px;
+.features-list__item {
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
-.description__item{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    
-    color: #212121;
-    margin-bottom: 10px;
+.features-list__icon-fon {
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
 
-    @include mq(mobile){
-        text-align: center;      
-    }
+  background: #F5F4FA;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
-.description__text{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    
-    color: #757575;  
+.features-list__icon {
+  align-items: center;
 }
 
-/* ⁡⁢⁣⁢𝗗𝗶𝘀𝗰𝗿⁡ icons */
+.features-list__title {
+  margin-bottom: 10px;
 
-.discription__icon{
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
 
-    background: #F5F4FA;
-    border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.features-list__text {
+  font-size: 14px;
+  line-height: 1.71;
 }

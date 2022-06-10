@@ -1,5 +1,31 @@
 /* ⁡⁣⁣⁢Постійні⁡ клієнти Logo */
 
+.clients-section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  
+    @media screen and (max-width: 479px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+}
+
+.logo__list {
+    justify-content: center;
+    align-items: center;
+    // grid-gap: 30px;
+}
+
+.customers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -8,16 +34,19 @@
 
     @include mq(mobile){
         display: block;
-        
-
         width: 210px;
         height: 92px;
-
     }
+
+    @include mq(tablet){
+        width: 226px;
+    }
+
 }
 
 .logo__item:not(:last-child){
     margin-right: 30px;
+
 }
 
 .logo__clients-icon{
