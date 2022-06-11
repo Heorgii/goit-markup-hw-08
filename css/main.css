@@ -46,22 +46,29 @@ ul {
   margin-bottom: 50px;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+@media screen and (min-width: 768px) {
+  .section__titles {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
+  .section__titles {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 780) {
   .section {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -154,6 +161,9 @@ main {
 }
 
 .nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 75px;
 }
 
@@ -762,7 +772,6 @@ header {
 
 /* ⁡⁢⁣⁣𝗛𝗲𝗿𝗼⁡ */
 .hero {
-  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -771,9 +780,43 @@ header {
           align-items: center;
 }
 
+@media screen and (min-width: 480px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
+}
+
 .hero__bg {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bgcpgoto.jpg);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgcpgoto.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-sm.jpg);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-md.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-lg.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg.jpg);
+  }
 }
 
 .hero__title {
@@ -792,6 +835,42 @@ header {
   margin: 0 auto;
   width: 696px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
 }
 
 .button {
@@ -844,21 +923,21 @@ header {
 
 /* ⁡⁢⁣⁢𝔻𝕚𝕤𝕔𝕣𝕚𝕡𝕥𝕚𝕠𝕟⁡ */
 .features {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .features {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1143,20 +1222,18 @@ header {
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 480px) {
   .clients-section {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-.logo__list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .clients-section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .customers {
@@ -1168,34 +1245,12 @@ header {
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
-}
-
-@media screen and (min-width: 480px) {
-  .logo {
-    display: block;
-    width: 210px;
-    height: 92px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 226px;
-  }
 }
 
 .logo__item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .logo__clients-icon {
@@ -1458,7 +1513,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 15px;
   padding-bottom: 0;
 }
 

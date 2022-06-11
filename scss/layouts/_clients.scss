@@ -9,16 +9,15 @@
       padding-bottom: 94px;
     }
   
-    @media screen and (max-width: 479px) {
+    @media screen and (min-width: 480px) {
       padding-left: 15px;
       padding-right: 15px;
     }
-}
 
-.logo__list {
-    justify-content: center;
-    align-items: center;
-    // grid-gap: 30px;
+    @include mq(tablet){
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .customers{
@@ -27,26 +26,25 @@
 }
 
 .logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     cursor: pointer;
 
-    @include mq(mobile){
-        display: block;
-        width: 210px;
-        height: 92px;
-    }
+    // @media screen and (max-width:767) {
+    //     display: block;
+    //     width: 210px;
+    // }
 
-    @include mq(tablet){
-        width: 226px;
-    }
+    // @include mq(tablet){
+    //     width: 226px;
+    // }
 
 }
 
 .logo__item:not(:last-child){
     margin-right: 30px;
-
+    margin-bottom: 30px;
 }
 
 .logo__clients-icon{

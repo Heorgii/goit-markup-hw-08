@@ -1,13 +1,36 @@
 /* ⁡⁢⁣⁣𝗛𝗲𝗿𝗼⁡ */
 
 .hero{
-    height: 600px;
     display: flex;
     align-items: center;
+
+    @include mq(mobile){
+        height: 400px;
+        
+    }
+
+    @include mq(tablet){
+        height: 400px;
+    }
+
+    @include mq(desktop){
+        height: 600px;
+    }
 }
 
 .hero__bg{
-    background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/bgcpgoto.jpg);
+
+    background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
+    background-repeat:no-repeat;
+
+    @include mq(tablet){
+        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md.jpg);
+        background-repeat: no-repeat;
+    }
+
+    @include mq(desktop){
+        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg.jpg);
+    }
 }
 
 .hero__title{
@@ -25,6 +48,40 @@
     margin: 0 auto;
     width: 696px;
     margin-bottom: 30px;
+
+    @include mq(mobile){
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        width: 360px;
+        
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    }
+
+    @include mq(tablet){
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        width: 360px;
+        
+        display: flex;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+    }
+
+
 }
 
 .button{
