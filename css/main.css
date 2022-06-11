@@ -563,11 +563,19 @@ header {
 }
 
 .mobile-menu {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 999;
   padding: 40px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -578,15 +586,24 @@ header {
   background-color: white;
 }
 
-.mobile-menu .mobile-menu__svg {
-  position: relative;
+.mobile-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.mobile-menu__svg {
   top: 0;
   right: 0;
   cursor: pointer;
 }
 
-.mobile-menu .mobile-menu__svg:hover, .mobile-menu .mobile-menu__svg:focus {
+.mobile-menu__svg:hover, .mobile-menu__svg:focus {
   fill: var(--accent-color);
+}
+
+.mobile-menu__button {
+  border-color: transparent;
+  background-color: transparent;
 }
 
 .mobile-menu__item {
@@ -638,6 +655,8 @@ header {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 34px;
+  line-height: 40px;
 }
 
 .mobile-menu__socials {
@@ -675,6 +694,12 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .header-container > .header-hidden {
+    display: none;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,6 +707,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mobile-menu__button {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    opacity: 0;
+  }
 }
 
 /* ⁡⁣⁢⁣𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
