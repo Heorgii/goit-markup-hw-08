@@ -730,6 +730,12 @@ header {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .nav__item-studio-link {
+    padding-bottom: 35px;
+  }
+}
+
 /* ⁡⁣⁢⁣𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
 .header__group {
   margin-left: auto;
@@ -804,6 +810,14 @@ header {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-sm@2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm@2x.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero__bg {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-md.jpg);
@@ -812,10 +826,24 @@ header {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-md@2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__bg {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-lg.jpg);
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__bg {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-lg@2x.jpg);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg@2x.jpg);
   }
 }
 
@@ -895,6 +923,17 @@ header {
   margin: 0 auto;
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button:focus {
@@ -1326,6 +1365,18 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .fot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1335,6 +1386,12 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 70px;
+}
+
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .fot {
+    display: contents;
+  }
 }
 
 .adres {
@@ -1387,6 +1444,12 @@ header {
           align-items: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
+}
+
 .footer-h3 {
   font-family: 'Roboto';
   font-style: normal;
@@ -1402,6 +1465,14 @@ header {
   right: 30px;
 }
 
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .footer-h3 {
+    text-align: center;
+    right: 0;
+    margin-top: 60px;
+  }
+}
+
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -1413,6 +1484,12 @@ header {
 /* ⁡⁣⁢⁣𝗙𝗼𝗼𝘁𝗲𝗿⁡ підписка */
 .subscribe-newsletter {
   margin-left: 94px;
+}
+
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .subscribe-newsletter {
+    display: contents;
+  }
 }
 
 .contact-form {
@@ -1427,6 +1504,18 @@ header {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .subscribe-h2 {
   font-family: 'Roboto';
   font-style: normal;
@@ -1437,6 +1526,12 @@ header {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .subscribe-h2 {
+    text-align: center;
+  }
 }
 
 .btn-submit {
@@ -1493,6 +1588,12 @@ header {
   width: 358px;
   height: 50px;
   margin-right: 12px;
+}
+
+@media screen and (max-width: 767px) and (max-width: 1199px) {
+  .email-footer-subscribe {
+    margin-bottom: 20px;
+  }
 }
 
 .email-footer-subscribe:focus {

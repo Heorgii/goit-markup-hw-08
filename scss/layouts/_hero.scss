@@ -23,13 +23,31 @@
     background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
     background-repeat:no-repeat;
 
+    @include mq(retina){
+        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/hero-sm@2x.jpg);
+        background-repeat:no-repeat;
+    }
+
     @include mq(tablet){
-        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-md.jpg);
+        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/hero-md.jpg);
         background-repeat: no-repeat;
+
+        @include mq(retina){
+            background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+            url(../images/hero/hero-md@2x.jpg);
+        }
     }
 
     @include mq(desktop){
-        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-lg.jpg);
+        background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+        url(../images/hero/hero-lg.jpg);
+
+        @include mq(retina){
+            background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
+            url(../images/hero/hero-lg@2x.jpg);
+        }
     }
 }
 
@@ -102,6 +120,11 @@
     align-items: center;
     margin: 0 auto;
     transition: 250ms ease;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .button:focus{

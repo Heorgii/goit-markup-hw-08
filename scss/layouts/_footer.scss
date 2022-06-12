@@ -12,12 +12,21 @@
 .footer > .container{
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-direction: column;  
+    }
 }
 
 .fot{
     display: flex;
     flex-direction: column;
     margin-right: 70px;
+
+    @media screen and (max-width:767px) and (max-width:1199px) {
+        display: contents;
+    }
 }
 
 .adres{
@@ -56,15 +65,15 @@
 
 
 /* ⁡⁣⁢⁣𝔽𝕠𝕠𝕥𝕖𝕣⁡ social networks */
-// .footer-network{
- 
-// }
-
 
 .footer-socials{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 60px;
+    }
 }
 
 .footer-h3{
@@ -82,6 +91,12 @@
 
     position: relative;
     right: 30px;
+
+    @media screen and (max-width:767px) and (max-width:1199px) {
+       text-align: center; 
+       right: 0;
+       margin-top: 60px;
+    }
 }
 
 .footer-social-link{
@@ -96,12 +111,22 @@
 
 .subscribe-newsletter{
     margin-left: 94px;
+
+    @media screen and (max-width:767px) and
+    (max-width:1199px){
+        display: contents;
+    }
 }
 
 .contact-form{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen and (max-width:767px) and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;   
+    }
 }
 
 .subscribe-h2{
@@ -115,6 +140,11 @@
     
     color: #FFFFFF;
     margin-bottom: 20px;
+
+    @media screen and (max-width:767px) and 
+    (max-width:1199px){
+        text-align: center;
+    }
 }
 
 .btn-submit{
@@ -162,6 +192,10 @@
     width: 358px;
     height: 50px;
     margin-right: 12px;
+
+    @media screen and (max-width:767px) and (max-width:1199px) {
+        margin-bottom: 20px;  
+    }
 }
 
 .email-footer-subscribe:focus{

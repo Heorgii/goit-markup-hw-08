@@ -30,6 +30,12 @@ header{
     }
 }
 
+.nav__item-studio-link{
+    @media screen and (max-width:1199px) {
+        padding-bottom: 35px;
+    }
+}
+
 /* ⁡⁣⁢⁣𝗛𝗲𝗮𝗱𝗲𝗿⁡ contact icon */
 
 .header__group{
