@@ -1395,29 +1395,32 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px 165px;
     text-align: center;
   }
 }
 
-.footer > .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1200px) {
+  .footer > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
+  .footer > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .footer > .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1426,16 +1429,6 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer > .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }
 
@@ -1448,6 +1441,16 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 70px;
+}
+
+@media screen and (min-width: 1200px) {
+  .fot {
+    margin-right: 70px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1463,7 +1466,7 @@ header {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .fot {
     margin-bottom: 60px;
     margin-right: 165px;
@@ -1519,6 +1522,12 @@ header {
 @media screen and (min-width: 768px) {
   .footer-network {
     margin-bottom: 102px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-network {
+    margin-bottom: 0;
   }
 }
 
@@ -1643,7 +1652,7 @@ header {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   .subscribe-h2 {
     text-align: center;
   }
