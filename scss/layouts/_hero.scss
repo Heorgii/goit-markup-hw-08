@@ -71,39 +71,11 @@
     width: 696px;
     margin-bottom: 30px;
 
-    @include mq(mobile){
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
+    @media screen and (max-width:1199px) {
         font-size: 26px;
         line-height: 42px;
         width: 360px;
-        
-        display: flex;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        
-        color: #FFFFFF;
     }
-
-    @include mq(tablet){
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 42px;
-        width: 360px;
-        
-        display: flex;
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        
-        color: #FFFFFF;
-    }
-
-
 }
 
 .button{

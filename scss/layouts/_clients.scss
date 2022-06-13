@@ -24,24 +24,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .logo{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     cursor: pointer;
-
-    // @media screen and (max-width:767) {
-    //     display: block;
-    //     width: 210px;
-    // }
-
-    // @include mq(tablet){
-    //     width: 226px;
-    // }
-
 }
 
 .logo__item{

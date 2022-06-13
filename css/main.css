@@ -689,6 +689,10 @@ header {
 }
 
 /* ⁡⁣⁢⁣ℍ𝕖𝕒𝕕𝕖𝕣⁡ */
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   border-bottom: 1px solid #ECECEC;
   padding-top: 25px;
@@ -769,6 +773,14 @@ header {
 
 .header__email {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 1199px) {
+  .header__email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header__icon {
@@ -867,39 +879,11 @@ header {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
     font-size: 26px;
     line-height: 42px;
     width: 360px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 42px;
-    width: 360px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
   }
 }
 
@@ -1083,7 +1067,7 @@ header {
   padding-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .img__section {
     display: none;
   }
@@ -1336,9 +1320,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: center;
 }
 
 .logo {
@@ -1770,6 +1752,19 @@ header {
   margin-bottom: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .buttons__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .button__item {
   padding: 6px 22px;
   background: #F5F4FA;
@@ -1786,6 +1781,12 @@ header {
   border-color: transparent;
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
+}
+
+@media screen and (max-width: 767px) {
+  .button__item {
+    margin-bottom: 15px;
+  }
 }
 
 .button__item:hover, .button__item:focus {
@@ -1820,14 +1821,58 @@ header {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .photo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .photo__item {
-  /* position: relative; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .photo__item {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
 .third {
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .overlay__photo {
+    width: 450px;
+    height: 294px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .overlay__photo {
+    width: 354px;
+    height: 294px;
+  }
 }
 
 .last-photo {
@@ -1844,12 +1889,38 @@ header {
   margin-bottom: 0;
 }
 
-.photo__item:nth-child(8) {
-  margin-bottom: 0;
+@media screen and (max-width: 767px) {
+  .photo__item:nth-child(7) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .photo__item:nth-child(7) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo__item:nth-child(8) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .photo__item:nth-child(8) {
+    margin-bottom: 30px;
+  }
 }
 
 .photo__item:nth-child(9) {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .photo__item:nth-child(9) {
+    margin-bottom: 30px;
+  }
 }
 
 .photo__item:hover, .photo:focus {

@@ -27,7 +27,7 @@
             <ul class="nav__list"> 
                 <li class="nav__item"><a class="nav__link nav__item-studio-link" href="#">Студия</a></li>
                 <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
   
@@ -222,15 +222,55 @@
            <div class="container">
             <h2 class="section__titles">Чем мы занимаемся</h2>
             <ul class="image__list">
-                <li class="img__item"> <img src="images/box1.jpg" alt="Робота з планшетом" width="370" height="294">
+                <li class="img__item"> 
+                  <picture>
+                    <!-- Зображення для комп'ютера -->
+
+                    <source 
+                    media="(min-width: 1200px )" 
+                    srcset="./images/images-uder-hero/img-1_lg.jpg 1x, 
+                    ./images/images-uder-hero/img-1_lg@2x.jpg 2x" 
+                    type="image/jpg">
+
+                  <img src="./images/images-uder-hero/img-1_lg.jpg" alt="Робота з планшетом" width="370" height="294"  loading="lazy">
+                  </picture>
+
                    <p class="img__text">Десктопные приложения</p>
                 </li>
-                <li class="img__item"> <img src="images/box2.jpg" alt="Робота з ноутбуком" width="370" height="294">
+
+                <li class="img__item"> 
+
+                  <picture>
+                     <!-- Зображення для комп'ютера -->
+
+                     <source 
+                     media="(min-width: 1200px )" 
+                     srcset="./images/images-uder-hero/img-2_lg.jpg 1x, 
+                     ./images/images-uder-hero/img-2_lg@2x.jpg 2x" 
+                     type="image/jpg">
+
+                  <img src="images/images-uder-hero/img-2_lg.jpg" alt="Робота з ноутбуком" width="370" height="294" loading="lazy">
+                  </picture>
+
                    <p class="img__text">Мобильные приложения</p>
                 </li>
-                <li class="img__item"> <img src="images/box3.jpg" alt="Робота з кольорами" width="370" height="294">
+
+                <li class="img__item"> 
+                  <picture>
+                     <!-- Зображення для комп'ютера -->
+
+                     <source 
+                     media="(min-width: 1200px )" 
+                     srcset="./images/images-uder-hero/img-3_lg.jpg 1x, 
+                     ./images/images-uder-hero/img-3_lg@2x.jpg 2x" 
+                     type="image/jpg">
+
+                  <img src="images/images-uder-hero/img-3_lg.jpg" alt="Робота з кольорами" width="370" height="294" loading="lazy">
+                  </picture>
+
                    <p class="img__text">Дизайнерские решения</p>
                 </li>
+
             </ul>
            </div>
        </section>
@@ -241,7 +281,33 @@
             <h2  class="section__titles">Наша команда</h2>
             <ul class="teachers">
                 <li class="teacher-item">
-                  <img class="teacher-img" src="images/teachers/teacher-4_sm.jpg" alt="Вчитель 4" width="270" height="260">
+                  <picture>
+                    <!-- Зображення для телефонів -->
+                    <source 
+                    media="(max-width: 767px )" 
+                    srcset="./images/teachers/teacher-4_sm.jpg 1x, 
+                    ./images/teachers/teacher-4_sm@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <!-- Зображення для планшетів -->
+
+                    <source 
+                    media="(min-width: 768px )" 
+                    srcset="./images/teachers/teacher-4_md.jpg 1x, 
+                    ./images/teachers/teacher-4_md@2x.jpg 2x" 
+                    type="image/jpg">
+
+                    <!-- Зображення для комп'ютера -->
+
+                    <source 
+                    media="(min-width: 1200px )" 
+                    srcset="./images/teachers/teacher-4_lg.jpg 1x, 
+                    ./images/teachers/teacher-4_lg@2x.jpg 2x" 
+                    type="image/jpg">
+
+                  <img class="teacher-img" src="images/teachers/teacher-4_sm.jpg" alt="Вчитель 4" width="270" height="260" loading="lazy">
+
+                  </picture>
                   
                   <div class="teacher-discr">
                     <h3 class="teacher-name-1">Игорь Демьяненко</h3>
@@ -289,7 +355,33 @@
                 </li>
 
                 <li class="teacher-item">
-                  <img class="teacher-img" src="images/teachers/teacher-1_sm.jpg" alt="Вчитель 1" width="270" height="260">
+
+                  <picture>
+                      <!-- Зображення для телефонів -->
+                      <source 
+                      media="(max-width: 767px )" 
+                      srcset="./images/teachers/teacher-1_sm.jpg 1x, 
+                      ./images/teachers/teacher-1_sm@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для планшетів -->
+  
+                      <source 
+                      media="(min-width: 768px )" 
+                      srcset="./images/teachers/teacher-1_md.jpg 1x, 
+                      ./images/teachers/teacher-1_md@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для комп'ютера -->
+  
+                      <source 
+                      media="(min-width: 1200px )" 
+                      srcset="./images/teachers/teacher-1_lg.jpg 1x, 
+                      ./images/teachers/teacher-1_lg@2x.jpg 2x" 
+                      type="image/jpg">
+
+                  <img class="teacher-img" src="images/teachers/teacher-1_sm.jpg" alt="Вчитель 1" width="270" height="260" loading="lazy">
+                  </picture>
                   
                   <div class="teacher-discr">
                     <h3 class="teacher-name-2">Ольга Репина</h3>
@@ -336,7 +428,33 @@
                 </li>
 
                 <li class="teacher-item">
-                  <img class="teacher-img" src="images/teachers/teacher-2_sm.jpg" alt="Вчитель 2" width="270" height="260">
+
+                  <picture>
+
+                    <source
+                    media="(max-width: 767px )" 
+                      srcset="./images/teachers/teacher-2_sm.jpg 1x, 
+                      ./images/teachers/teacher-2_sm@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для планшетів -->
+  
+                      <source 
+                      media="(min-width: 768px )" 
+                      srcset="./images/teachers/teacher-2_md.jpg 1x, 
+                      ./images/teachers/teacher-2_md@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для комп'ютера -->
+  
+                      <source 
+                      media="(min-width: 1200px )" 
+                      srcset="./images/teachers/teacher-2_lg.jpg 1x, 
+                      ./images/teachers/teacher-2_lg@2x.jpg 2x" 
+                      type="image/jpg">
+
+                  <img class="teacher-img" src="images/teachers/teacher-2_sm.jpg" alt="Вчитель 2" width="270" height="260" loading="lazy">
+                  </picture>
                   
                   <div class="teacher-discr">
                     <h3 class="teacher-name-3">Николай Тарасов</h3>
@@ -383,7 +501,32 @@
                 </li>
                 
                 <li class="teacher-item">
-                  <img class="teacher-img" src="images/teachers/teacher-3_sm.jpg" alt="Вчитель 3" width="270" height="260">   
+
+                  <picture>
+                    <source
+                    media="(max-width: 767px )" 
+                      srcset="./images/teachers/teacher-3_sm.jpg 1x, 
+                      ./images/teachers/teacher-3_sm@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для планшетів -->
+  
+                      <source 
+                      media="(min-width: 768px )" 
+                      srcset="./images/teachers/teacher-3_md.jpg 1x, 
+                      ./images/teachers/teacher-3_md@2x.jpg 2x" 
+                      type="image/jpg">
+  
+                      <!-- Зображення для комп'ютера -->
+  
+                      <source 
+                      media="(min-width: 1200px )" 
+                      srcset="./images/teachers/teacher-3_lg.jpg 1x, 
+                      ./images/teachers/teacher-3_lg@2x.jpg 2x" 
+                      type="image/jpg">
+
+                  <img class="teacher-img" src="images/teachers/teacher-3_sm.jpg" alt="Вчитель 3" width="270" height="260"  loading="lazy">
+                  </picture>
                   
                   <div class="teacher-discr">
                     <h3 class="teacher-name-4">Михаил Ермаков</h3>
@@ -494,8 +637,8 @@
 
       <!-- Conact information -->
        
-    <footer class="footer">
-              <div class="container">
+    <footer class="footer" >
+              <div class="container" id="contacts">
                
                  <div class="fot">
                   <a href="#"><span class="nav__web">Web</span> <span class="studio-footer">Studio</span></a>

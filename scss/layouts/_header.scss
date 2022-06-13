@@ -1,4 +1,8 @@
 /* ⁡⁣⁢⁣ℍ𝕖𝕒𝕕𝕖𝕣⁡ */
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     border-bottom: 1px solid #ECECEC;
     padding-top: 25px;
@@ -64,6 +68,9 @@ header{
 
 .header__email{
     margin-right: 50px;
+    @media screen and (max-width:1199px) { 
+        display: flex;
+    }
 }
 
 .header__icon{

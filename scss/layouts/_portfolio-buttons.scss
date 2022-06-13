@@ -4,6 +4,12 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width:767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;  
+    }
 }
 
 .button__item{
@@ -23,6 +29,10 @@
 
     border-color: transparent;
     transition: 250ms ease;
+    
+    @media screen and (max-width:767px) {
+        margin-bottom: 15px; 
+    }
 } 
 
 .button__item:hover, .button__item:focus{
