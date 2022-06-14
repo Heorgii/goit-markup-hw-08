@@ -41,6 +41,7 @@
 
 .mobile-menu__item{
     margin: 32px 0;
+    transition: 250ms ease;
 }
 
 .mobile-menu__link{
@@ -53,7 +54,11 @@
     margin-top: 32px;
     
     color: #212121;
-    transition: 250ms ease;
+}
+
+.mobile-menu__link-studio, 
+.mobile-menu__link-portfolio{
+    color: var(--accent-color);
 }
 
 .mobile-menu__link:hover,
@@ -64,6 +69,7 @@
 
 .mobile-menu__contacts{
     margin-top: auto;
+
 
     .mobile-menu__contact-link{
         font-family: 'Roboto';

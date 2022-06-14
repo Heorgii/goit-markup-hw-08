@@ -13,7 +13,6 @@
     }
 }
 
-
 .footer > .container{
 
     @media screen and (max-width:767px) {
@@ -168,20 +167,16 @@
 /* ⁡⁣⁢⁣𝗙𝗼𝗼𝘁𝗲𝗿⁡ підписка */
 
 .subscribe-newsletter{
-    margin-left: 94px;
 
     @media screen and (max-width:767px) {
         display: contents;
-    }
-
-    @media screen and (max-width:1199px) {
-        margin-left: 166px;
     }
 
     @media screen and (min-width:1200px) {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 94px;
     } 
 }
 
