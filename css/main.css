@@ -57,15 +57,18 @@ ul {
   .section__titles {
     font-size: 28px;
     line-height: 33px;
+    margin-bottom: 30px;
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-@media screen and (min-width: 780) {
+@media screen and (max-width: 1199px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -77,11 +80,6 @@ body {
   font-family: 'Roboto';
   margin: 0;
   padding: 0;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 a {
@@ -620,6 +618,14 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .mobile-menu.is-open {
@@ -1173,7 +1179,6 @@ header {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1187,6 +1192,20 @@ header {
   .teacher-item {
     width: 354px;
     height: 536px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teacher-item:nth-child(3) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .teacher-item:last-child,
+  .teacher-item:nth-child(3) {
+    margin-bottom: 0;
   }
 }
 
@@ -1745,14 +1764,9 @@ header {
   margin-right: 12px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .email-footer-subscribe {
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .email-footer-subscribe {
+    width: 450px;
     margin-bottom: 20px;
   }
 }
@@ -1820,6 +1834,12 @@ header {
   padding-bottom: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .nav__item-portfolio-link {
+    padding-bottom: 40px;
+  }
+}
+
 /* ⁡⁢⁣⁢𝗕𝘂𝘁𝘁𝗼𝗻𝘀⁡ */
 .buttons__list {
   display: -webkit-box;
@@ -1828,7 +1848,6 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1841,6 +1860,19 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .buttons__list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1941,7 +1973,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .overlay__photo {
-    width: 370px;
+    width: 354px;
     height: 294px;
   }
 }

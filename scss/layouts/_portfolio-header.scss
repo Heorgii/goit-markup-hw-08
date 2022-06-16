@@ -10,3 +10,9 @@
     align-items: center;
     padding-bottom: 0;
 }
+
+.nav__item-portfolio-link{
+    @media screen and (max-width:1199px) {
+        padding-bottom: 40px;
+    }
+}

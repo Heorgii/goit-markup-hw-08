@@ -33,14 +33,19 @@ ul{
     @media screen and (max-width:1199px) {
         font-size: 28px;
         line-height: 33px;
+        margin-bottom: 30px;
     }
 }
 
 .section{
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+   
     
-    @media screen and (min-width: 780) {
+    @media screen and (max-width:1199px) {
         padding-top: 60px;
         padding-bottom: 60px;
     }
@@ -66,10 +71,10 @@ body{
     padding: 0;
 }
 
-.section{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+// .section{
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
 
 a{
     text-decoration: none;
