@@ -46,14 +46,14 @@ ul {
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section__titles {
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .section__titles {
     font-size: 28px;
     line-height: 33px;
@@ -286,7 +286,7 @@ header {
 @media screen and (max-width: 1199px) {
   .modal-wrapper {
     width: 450px;
-    height: 100%;
+    height: 609px;
   }
 }
 
@@ -767,7 +767,7 @@ header {
 
 @media screen and (max-width: 1199px) {
   .nav__item-studio-link {
-    padding-bottom: 35px;
+    padding-bottom: 40px;
   }
 }
 
@@ -784,6 +784,13 @@ header {
   color: #757575;
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
+}
+
+@media screen and (max-width: 1199px) {
+  .header__email, .header__tel {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .header__email:hover, .header__tel:hover {
@@ -811,6 +818,7 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
   }
 }
 
@@ -983,14 +991,7 @@ header {
   padding-bottom: 94px;
 }
 
-@media screen and (min-width: 768px) {
-  .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .features {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1148,6 +1149,7 @@ header {
 /*  ⁡⁢⁢⁣𝕋𝕖𝕒𝕞⁡  */
 .team {
   background: #F5F4FA;
+  margin-bottom: 60px;
 }
 
 .teachers {
@@ -1319,13 +1321,6 @@ header {
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1532,6 +1527,12 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-logo {
+    text-align: left;
   }
 }
 
@@ -1940,7 +1941,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .overlay__photo {
-    width: 354px;
+    width: 370px;
     height: 294px;
   }
 }

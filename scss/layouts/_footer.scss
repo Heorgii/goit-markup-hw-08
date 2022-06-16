@@ -72,6 +72,12 @@
     }
 }
 
+.footer-logo{
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
+}
+
 .adres{
     font-style: normal;
     font-weight: 400;

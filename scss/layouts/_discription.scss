@@ -3,16 +3,11 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-  
-  @include mq(tablet){
-      padding-top: 60px;
-      padding-bottom: 60px;
-  }
 
-  @include mq(mobile){
+    @media screen and (max-width:1199px) {
       padding-top: 60px;
       padding-bottom: 60px;
-  }
+    }
 }
   
 .features-flex {

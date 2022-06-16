@@ -36,7 +36,7 @@ header{
 
 .nav__item-studio-link{
     @media screen and (max-width:1199px) {
-        padding-bottom: 35px;
+        padding-bottom: 40px;
     }
 }
 
@@ -54,6 +54,11 @@ header{
     color: #757575;
     transition: 250ms ease;
 
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
 }
 
 .header__email:hover, .header__tel:hover{
@@ -70,6 +75,7 @@ header{
     margin-right: 50px;
     @media screen and (max-width:1199px) { 
         display: flex;
+        margin-bottom: 10px;
     }
 }
 

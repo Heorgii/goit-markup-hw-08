@@ -25,12 +25,12 @@ ul{
 
     margin-bottom: 50px;
 
-    @include mq(tablet){
-        font-size: 28px;
-        line-height: 33px;
+    @media screen and (min-width:1200px) {
+        font-size: 36px;
+        line-height: 42px;
     }
 
-    @include mq(mobile){
+    @media screen and (max-width:1199px) {
         font-size: 28px;
         line-height: 33px;
     }
