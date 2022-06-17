@@ -1,5 +1,15 @@
 /* ⁡⁢⁣⁢⁡⁢⁣⁢𝗣𝗵𝗼𝘁𝗼𝘀 ⁡ */
 
+.photo-list{
+    @media screen and (min-width:768px) {
+        padding-bottom: 0;        
+    }
+
+    @media screen and (min-width:1200px) {
+        padding-bottom: 94px;
+    }
+}
+
 .photo__list{
     margin-right: -30px;
     display: flex;

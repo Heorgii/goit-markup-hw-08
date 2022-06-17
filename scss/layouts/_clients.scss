@@ -9,13 +9,13 @@
     // //   padding-bottom: 94px;
     // }
   
-    @media screen and (min-width: 480px) {
-      padding-left: 50px;
-      padding-right: 15px;
-    }
+    // @media screen and (min-width: 480px) {
+    //   padding-left: 50px;
+    //   padding-right: 15px;
+    // }
 
     @include mq(tablet){
-        padding-left: 80px;
+        // padding-left: 80px;
         padding-right: 15px;
     }
 }
@@ -23,7 +23,6 @@
 .customers{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     justify-content: center;
 
     @media screen and (min-width:1200px) {
@@ -46,14 +45,27 @@
     box-sizing: border-box;
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
-    width: 170px;
     height: 92px;
+    // width: 170px;
+
     fill: #AFB1B8;
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition: 250ms ease;
+
+    @media screen and (max-width:767px) {
+        width: 210px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
 
     &:hover{
         border-color: #2196F3;
