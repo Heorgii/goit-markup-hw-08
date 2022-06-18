@@ -72,7 +72,10 @@ header{
 }
 
 .header__email{
-    margin-right: 50px;
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;        
+    }
+    
     @media screen and (max-width:1199px) { 
         display: flex;
         margin-bottom: 10px;

@@ -21,35 +21,48 @@
 .hero__bg{
 
     background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/hero/hero-sm.jpg);
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 
     @include mq(retina){
         background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
         url(../images/hero/hero-sm@2x.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     @include mq(tablet){
         background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
         url(../images/hero/hero-md.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         @include mq(retina){
             background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
             url(../images/hero/hero-md@2x.jpg);
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     }
 
     @include mq(desktop){
         background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
         url(../images/hero/hero-lg.jpg);
-
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
         @include mq(retina){
             background: linear-gradient( rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), 
             url(../images/hero/hero-lg@2x.jpg);
             background-size: cover;
             background-repeat: no-repeat;
+            background-position: center;
 
         }
     }
