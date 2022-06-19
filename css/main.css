@@ -488,6 +488,13 @@ header {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-form__policy-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 /* ​‌‍‌⁡⁣⁣⁢𝗖𝗵𝗲𝗰𝗸𝗯𝗼𝘅⁡​ modal */
 .check-agree {
   position: relative;
@@ -1199,14 +1206,21 @@ header {
   .teacher-item {
     width: 450px;
     height: 622px;
+    margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .teacher-item {
     width: 354px;
     height: 536px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .teacher-item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -1246,7 +1260,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) {
   .teacher-img {
     width: 354px;
     height: 374px;
@@ -1351,9 +1365,11 @@ header {
 }
 
 /* ⁡⁣⁣⁢Постійні⁡ клієнти Logo */
-.clients-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .clients-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .customers {
@@ -1538,7 +1554,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 70px;
+  margin-right: 165px;
   margin-bottom: 60px;
 }
 
@@ -1566,7 +1582,7 @@ header {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .fot {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1793,10 +1809,23 @@ header {
   margin-right: 12px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .email-footer-subscribe {
     margin-bottom: 20px;
     max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .email-footer-subscribe {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email-footer-subscribe {
+    width: 358px;
   }
 }
 
@@ -1998,6 +2027,12 @@ header {
   .photo__item {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .photo__item:nth-child(9) {
+    margin-bottom: 0;
   }
 }
 

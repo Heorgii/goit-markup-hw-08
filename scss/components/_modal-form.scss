@@ -222,6 +222,11 @@
     text-decoration-line: underline;
     
     color: var(--accent-color);
+
+    @media screen and (max-width:1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+    }
 }
 
 /* ​‌‍‌⁡⁣⁣⁢𝗖𝗵𝗲𝗰𝗸𝗯𝗼𝘅⁡​ modal */

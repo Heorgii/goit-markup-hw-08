@@ -1,8 +1,11 @@
 /* ⁡⁣⁣⁢Постійні⁡ клієнти Logo */
 
 .clients-section{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @media screen and (max-width:1199px) {
+        padding-top: 60px;
+        padding-bottom: 60px;   
+    }
+    
 }
 
 .customers{

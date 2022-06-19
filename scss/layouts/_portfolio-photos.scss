@@ -42,6 +42,12 @@
   
 }
 
+.photo__item:nth-child(9){
+    @media screen and (max-width:1199px) {
+        margin-bottom: 0;
+    }
+}
+
 .photo__item:nth-child(7){
     @media screen and (min-width:1200px) {
         margin-bottom: 0;
